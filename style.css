@@ -126,12 +126,15 @@ img, svg { display: block; max-width: 100%; }
 .theme-toggle svg { width: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .theme-toggle .sun-icon, [data-theme="light"] .theme-toggle .moon-icon { display: none; }
 [data-theme="light"] .theme-toggle .sun-icon { display: block; }
-.menu-toggle { display: none; margin-left: auto; }
-.menu-toggle span { position: absolute; width: 16px; height: 1.5px; background: currentColor; transition: .3s ease; }
-.menu-toggle span:first-child { transform: translateY(-3px); }
-.menu-toggle span:last-child { transform: translateY(3px); }
-.menu-toggle.active span:first-child { transform: rotate(45deg); }
-.menu-toggle.active span:last-child { transform: rotate(-45deg); }
+.menu-toggle { position: relative; display: none; margin-left: auto; }
+.menu-toggle span {
+  position: absolute; top: 50%; left: 50%; width: 16px; height: 1.5px;
+  background: currentColor; transform-origin: center; transition: .3s ease;
+}
+.menu-toggle span:first-child { transform: translate(-50%, -4px); }
+.menu-toggle span:last-child { transform: translate(-50%, 3px); }
+.menu-toggle.active span:first-child { transform: translate(-50%, -50%) rotate(45deg); }
+.menu-toggle.active span:last-child { transform: translate(-50%, -50%) rotate(-45deg); }
 
 .hero {
   display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(40px, 7vw, 90px);
