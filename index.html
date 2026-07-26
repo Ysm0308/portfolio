@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ysm, a Roblox developer">
+  <meta name="theme-color" content="#171721">
+  <title>Ysm Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar glass" aria-label="Navigation principale">
+      <a class="brand" href="#home" aria-label="Retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true">Y</span>
+        <span>ysm<span class="muted"> portfolio</span></span>
+      </a>
+
+      <button class="menu-toggle icon-button" type="button" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#commissions">Commissions</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <span class="availability"><i aria-hidden="true"></i>Available for work</span>
+        <button class="theme-toggle icon-button" type="button" aria-label="Activer le thème clair" title="Changer de thème">
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <h1>Welcome to <span>Ysm Portfolio</span></h1>
+        <p class="hero-intro">I'm a Roblox developer who enjoys building polished gameplay systems and immersive experiences that feel fun to explore.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View my projects <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="#contact">Contact me</a>
+        </div>
+
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Aperçu décoratif d'un terminal Luau">
+        <div class="float-chip chip-top">
+          <span class="chip-icon mint">◇</span>
+          <span><small>Visits reached</small><strong>10M+</strong></span>
+        </div>
+        <div class="terminal-window window glass">
+          <div class="window-bar">
+            <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>ysm@studio: ~/current-project</span>
+            <span class="bar-action">⌁</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-command"><span class="terminal-user">ysm@roblox</span><span class="terminal-path"> ~/workspace</span><span> $ fastfetch</span></div>
+            <div class="fastfetch">
+              <div class="ascii-logo" aria-hidden="true">
+                <span> ▄███▄ ▄███▄</span>
+                <span>█████████████</span>
+                <span>▀███████████▀</span>
+                <span>  ▀███████▀</span>
+                <span>    ▀███▀</span>
+              </div>
+              <dl>
+                <div><dt>role</dt><dd>Roblox Developer</dd></div>
+                <div><dt>stack</dt><dd>Luau · Roblox Studio · Rojo · Git</dd></div>
+                <div><dt>focus</dt><dd>Scripting · UI</dd></div>
+                <div><dt>status</dt><dd><i class="online-dot"></i> For Hire</dd></div>
+              </dl>
+            </div>
+            <div class="code-block">
+              <span class="line-number">01</span><code><b>local</b> experience = Game.new({</code>
+              <span class="line-number">02</span><code>  gameplay = <em>"good"</em>,</code>
+              <span class="line-number">03</span><code>  bugs = <em class="code-boolean">false</em>,</code>
+              <span class="line-number">04</span><code>})</code>
+            </div>
+            <div class="terminal-command bottom"><span class="terminal-user">➜</span><span class="terminal-path"> project.luau</span><span class="cursor" aria-hidden="true"></span></div>
+          </div>
+        </div>
+        <div class="float-chip chip-bottom">
+          <span class="chip-icon lavender">⌘</span>
+          <span><small>Primary stack</small><strong>Luau / Studio</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span>01</span> / about</p><h2>Who am I?</h2></div>
+      </div>
+
+      <article class="about-window window glass reveal">
+        <div class="window-bar">
+          <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span>~/portfolio/about-me.md</span>
+          <span class="bar-action">●</span>
+        </div>
+        <div class="about-content">
+          <div class="file-sidebar" aria-label="Explorateur de fichiers décoratif">
+            <p>EXPLORER</p>
+            <ul>
+              <li class="folder">⌄ PORTFOLIO</li>
+              <li class="active"># about-me.md</li>
+              <li>◈ projects.luau</li>
+              <li>◇ commissions.json</li>
+              <li>⌁ contact.txt</li>
+            </ul>
+          </div>
+          <div class="markdown-copy">
+            <span class="comment">&lt;!-- hello, world! --&gt;</span>
+            <h3>Hi, I'm Ysm, an experienced Roblox scripter</h3>
+            <p>I'm passionate about game development and programming in general. I've been developing on Roblox for <b>three years</b>. I published a few games I made myself and I also worked on various projects with <b>teams</b>.</p>
+            <p><b>Scripting</b> is my main skill, but I can also create clean and functional <b>GUIs.</b> I specialize in both backend and frontend development, building well-structured core game mechanics and scripting UI interactions.</p>
+            <div class="about-grid">
+              <div><span>01 · I care about</span><strong>Design, clarity & performance</strong></div>
+              <div><span>02 · What I enjoy</span><strong>Solving problems and refining mechanics</strong></div>
+              <div><span>03 · Goal</span><strong>Creating games players want to come back to</strong></div>
+            </div>
+            <div class="tag-list" aria-label="Valeurs"><span>thoughtful</span><span>collaborative</span><span>curious</span><span>organized</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span>02</span> / projects</p><h2>Showcase of my work.</h2></div>
+        <p>Note: Some game links may not work due to an indexing issue following moderation action on an account :(</p>
+      </div>
+
+      <div class="project-toolbar reveal">
+        <div class="project-filters" role="group" aria-label="Filtrer les projets">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="games">Games</button>
+          <button class="filter" data-filter="systems">Systems</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+      </div>
+    </section>
+
+    <section class="section commissions-section" id="commissions">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span>03</span> / commissions</p><h2>Commission details.</h2></div>
+      </div>
+
+      <div class="commission-window window glass reveal">
+        <div class="window-bar">
+          <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span>~/portfolio/commissions.json</span>
+          <span class="commission-open"><i></i>OPEN</span>
+        </div>
+        <div class="commission-body">
+          <div class="commission-summary">
+            <p class="commission-label">current_status</p>
+            <div class="commission-status"><i aria-hidden="true"></i><strong>Open for commissions</strong></div>
+            <p>I’m currently accepting Roblox development work. Send a clear description of what you need so I can confirm the scope and price.</p>
+          </div>
+
+          <dl class="commission-list">
+            <div><dt>status</dt><dd><span class="value-dot available"></span>Open</dd></div>
+            <div><dt>payment</dt><dd>PayPal only</dd></div>
+            <div><dt>timezone</dt><dd>UTC+2 · Paris</dd></div>
+            <div><dt>availability</dt><dd>Flexible schedule</dd></div>
+          </dl>
+
+          <div class="commission-note">
+            <span>PLEASE INCLUDE</span>
+            <p>Your budget, deadline, references, and a short explanation of what you need.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-intro reveal">
+        <p class="eyebrow"><span>04</span> / contact</p>
+        <h2>Where to find me.</h2>
+      </div>
+
+      <div class="contact-card window glass reveal">
+        <div class="window-bar">
+          <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span>~/portfolio/contact.txt</span>
+          <span class="bar-action">●</span>
+        </div>
+        <div class="contact-card-body">
+          <div class="discord-contact">
+            <span class="contact-service">DISCORD</span>
+            <strong>ysm08</strong>
+          </div>
+
+          <div class="roblox-accounts">
+            <p class="contact-service">ROBLOX ACCOUNTS</p>
+            <a href="https://www.roblox.com/users/550213185/profile" target="_blank" rel="noopener noreferrer">
+              <span class="account-icon" aria-hidden="true">◇</span>
+              <span><small>MAIN ACCOUNT</small><strong>yasmine3479cool</strong></span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.roblox.com/users/5255949849/profile" target="_blank" rel="noopener noreferrer">
+              <span class="account-icon dev" aria-hidden="true">◇</span>
+              <span><small>DEVELOPER ACCOUNT</small><strong>YasDev08</strong></span>
+              <span class="external-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="response-time">
+            <span><i aria-hidden="true"></i>AVERAGE RESPONSE TIME</span>
+            <strong>1–2 hours</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="project-lightbox" id="project-lightbox" aria-label="Aperçu agrandi du projet">
+    <div class="lightbox-shell">
+      <button class="lightbox-close" type="button" aria-label="Fermer l’image agrandie">×</button>
+      <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Image précédente">←</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption>
+          <span class="lightbox-caption"></span>
+          <span class="lightbox-count" aria-live="polite"></span>
+        </figcaption>
+      </figure>
+      <button class="lightbox-arrow lightbox-next" type="button" aria-label="Image suivante">→</button>
+    </div>
+  </dialog>
+
+  <footer>
+    <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">Y</span><span>ysm<span class="muted"> portfolio</span></span></a>
+    <p>Thanks for taking the time to check out my work!</p>
+    <p class="footer-meta"><span>© <span id="year"></span></span><span>Paris, FR</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
