@@ -3,7 +3,7 @@ const PROJECTS = [
     title: "Werewolf",
     file: "games/werewolf.rbxl",
     url: "https://www.roblox.com/games/106897612141160/Werewolf",
-    description: "A social deduction role-based game that I developed solo. It is my first and biggest project.",
+    description: "A social deduction game with unique roles, special abilities, and dynamic events. It is my first and biggest project.",
     details: `The game features complex mechanics such as:
 - Matchmaking
 - Trading system
@@ -12,7 +12,7 @@ const PROJECTS = [
 - Voting & role system
 - Leveling system
 - Gamepasses
-...and many other systems`,
+...and much more.`,
     tags: ["Full game"],
     category: "games",
     colors: ["#8b7bb2", "#3d7181"],
@@ -29,7 +29,7 @@ const PROJECTS = [
     title: "Guess the Anime Song",
     file: "games/guess-the-anime-song.rbxl",
     url: "https://www.roblox.com/games/90224044482373/Guess-The-Anime-Song",
-    description: "Simple but feature-rich mini game based on guessing anime songs.",
+    description: "A feature-rich mini-game where players guess anime songs while surviving rising lava.",
     details: `The core mechanic revolves around playing short song clips while players try to survive the rising lava by correctly guessing the song. There are also many different systems, including:
 - Tower customization
 - Song picking
@@ -39,7 +39,7 @@ const PROJECTS = [
 - Daily rewards
 - Coins collecting
 - Morphs
-...and more`,
+...and more.`,
     tags: ["Mini game"],
     category: "games",
     colors: ["#9c718e", "#5e567f"],
@@ -48,6 +48,41 @@ const PROJECTS = [
       { src: "images/GTAS_2.jpg", alt: "GTAS 2", label: "gtas-02.jpg" },
       { src: "images/GTAS_3.jpg", alt: "GTAS 3", label: "gtas-03.jpg" },
       { src: "images/GTAS_4.jpg", alt: "GTAS 4", label: "gtas-04.jpg" }
+    ]
+  },
+  {
+    title: "Paint Characters Keyboard",
+    file: "systems/paint-characters-keyboard.rbxl",
+    url: "",
+    description: "ASMR Keyboard to paint a character image by walking on the keys with a color selection system.",
+    details: `I also implemented useful features such as:
+- Color hint product
+- Complete color product
+- Complete image product
+- Paint progress display
+- Keys left display
+- Money collecting`,
+    tags: ["System"],
+    category: "systems",
+    colors: ["#a17689", "#737ca1"],
+    images: [
+      { src: "images/Keyboard_1.png", alt: "Keyboard", label: "paint-keyboard-01.jpg" },
+      { src: "images/Keyboard_2.png", alt: "Keyboard", label: "paint-keyboard-02.jpg" },
+      { src: "images/Keyboard_3.png", alt: "Keyboard", label: "paint-keyboard-03.jpg" }
+    ]
+  },
+  {
+    title: "Color Clues",
+    file: "systems/color-clues.rbxl",
+    url: "https://www.roblox.com/games/120558251554089/Color-Clues",
+    description: "Color guessing game where players have to guess the correct color based on clues given by another player.",
+    tags: ["Mini game"],
+    category: "games",
+    colors: ["#a17689", "#737ca1"],
+    images: [
+      { src: "images/Color_1.png", alt: "Color Clues", label: "color-clues-01.jpg" },
+      { src: "images/Color_2.png", alt: "Color Clues", label: "color-clues-02.jpg" },
+      { src: "images/Color_3.png", alt: "Color Clues", label: "color-clues-03.jpg" }
     ]
   },
   {
@@ -66,14 +101,14 @@ const PROJECTS = [
     title: "Admin Panel",
     file: "systems/admin-panel.rbxl",
     url: "",
-    description: "Admin panel with basic commands.",
+    description: "A customizable admin panel featuring moderation and utility commands.",
     tags: ["System"],
     category: "systems",
     colors: ["#a17689", "#737ca1"],
     images: [
       { src: "images/Admin_panel.jpg", alt: "Admin Panel", label: "admin-panel.jpg" },
     ]
-  }
+  },
 ];
 
 const root = document.documentElement;
